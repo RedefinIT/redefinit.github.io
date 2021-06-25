@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+.blog-header {
+  color: var(--dark-color);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.blog-heading {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.blog-byline {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* SUBHEADS */
+
+.sh-1 {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.sh-2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* INDENTS */
+
+.id-1 {
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .blog-heading {
+    font-size: 2.5rem;
+  }
+}

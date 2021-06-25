@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/blog.css">
+    <title>RedefinIT | Home</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container-wide flex">
+        <a class="monogram" href="../index.html"
+          ><h1 class="logo">
+            Redefin<span class="nav--highlight">IT</span>
+          </h1></a
+        >
+        <nav class="flex">
+          <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+          <div class="nav flex">
+            <div class="navsecondary flex">
+              <ul class="navlist flex">
+                <li><a class="navlink" href="../index.html">Home</a></li>
+                <li><a class="navlink" href="../bma.html">Product</a></li>
+                <li><a class="navlink" href="../blog.html">Blog</a></li>
+              </ul>
+              <div class="btn">Ask for a Trial</div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <section>
+        <div class="blog-header container-wide ">
+            <div>
+            <h1 class="blog-heading"> New approach to automating OS installation on bare-metal servers</h1>
+            <p class="blog-byline">by <strong>Govind Avireddi</strong> on 26th July 2021</p>
+        </div>
+    </div>
+    </section >
+
+    <section class="container">
+        <p>Much has been done in the advancement of IT infrastructure management technologies, but there is no fundamental change in the way the operating systems are installed on the bare-metal Industry Standard Servers. There are scores of tools available that help the IT admins to automate the OS installation. Almost all bare-metal OS deployment tools rely on outdated technologies and protocols such as PXE, TFTP, IPMI, DHCP, legacy BIOS because they are supported by multiple vendor servers as well as multiple generation servers. However, these underlying technologies and protocols have limitations and security vulnerabilities that go against the security policies that are key to safeguarding modern datacenters against cybersecurity threats. These legacy technologies also increase the complexity of the IT operations. They are also not designed to handle the deployment of hundreds of servers, which in turn impacts how fast an enterprise can respond to market demands.</p>
+        <p><strong> (Pre-Boot Execution Environment) </strong>was introduced as part of the Wired for Management framework in the 1990s. PXE allows a server to boot from local network and, the IT administrator to install and configure the OS on networked computers remotely. However, one of the key issues with PXE is the lack of security. It has no mechanism for encryption or authentication, making it susceptible to man-in-the-middle attacks. PXE requires servers with PXE-capable NIC adapters and relies on TCP/UDP, DHCP and TFTP. The following sections describe the various underlying technologies involved with PXE based OS deployment tools:</p>
+        <h3 class="sh-2 id-1">TFTP</h2>
+        <p class="id-1">PXE uses TFTP service for presenting the boot loader and the OS installation media to the servers over the network. TFTP is an abbreviation and expands to Trivial File Transfer Protocol?. It is basically FTP without login or access control mechanisms. TFTP has reliability issues associated with TFTP time-outs and UDP packet loss. It is also not designed to handle larger file sizes of boot images that come with today's operating systems. The TFTP and UDP transactions associated with PXE may be the last unencrypted traffic on your network and are trivial to intercept. This boot process goes against the “zero trust” concept applied to today’s networks <a href="https://software.intel.com/content/www/us/en/develop/blogs/network-boot-in-a-zero-trust-environment.html">(link)</a>.</p>
+
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container-mobile grid grid-3">
+        <div>
+          <a class="monogram" href="../index.html"
+            ><h1 class="logo">
+              Redefin<span class="nav--highlight">IT</span>
+            </h1></a
+          >
+          <p>RedefinIT Technologies Pvt Ltd</br>
+            103 Carleston Nest Apt,</br>
+            17 Lloyd Rd, Cooke Town,</br>
+            Bengaluru - 560005, Karnataka</br>
+            India
+            </p>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../bma.html">Product</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
