@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RedifinIT | BMA</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container-wide flex">
+        <a class="monogram" href="index.html"
+          ><h1 class="logo">
+            Redifin<span class="nav--highlight">IT</span>
+          </h1></a
+        >
+        <nav class="flex">
+          <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+          <div class="nav flex">
+            <div class="navsecondary flex">
+              <ul class="navlist flex">
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="bma.html">Product</a></li>
+                <li><a class="navlink" href="blog.html">Blog</a></li>
+              </ul>
+              <div class="btn">Ask for a Trial</div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header -->
+
+    <section>
+      <div class="header"><img class="banner-img" src="images/bmabanner.png" alt=""></div>
+      <div class="banner-text">
+        <h2 class="m-1">BMA or add one-line summary of BMA</h2>
+        <div class="grid-3">
+         <a class="btn" href="form.html">Ask for a Trial</a>
+         <a class="btn btn-light" href="blog.html">Read our Blog</a>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+
+    <section class="section bg-dark ">
+      <div class="container grid wide-gap">
+
+        <h2 class="o-1 text-primary">Why BMA?</h2>
+        <p class="o-2">There is a major shift towards scale-out deployments in datacenters.
+          Scale-out is driven by a new era of software (On-Prem Cloud, HPC, AI/ML, Containers, VMWare Virtualization, VDI, etc.). However, organizations are facing significant friction with the onboarding, provisioning and management of their physical hardware. ardware is an expensive and difficult resource to deploy within a data center driving organizations to move to the cloud.</p>
+          
+          <p class="o-4"> RedefinIT BMA addresses the key challenges in managing bare-metal servers by providing a simplified approach to OS installation and Firmware updates. It uses modern industry standard technologies and protocols to automate OS installation and Firmware updates in a secure, faster and reliable way. This product supports multiple vendor hardware and multiple operating systems and hypervisors, making it a versatile tool in the modern enterprise datacenter. It is highly scalable to handle large-scale deployments. With RESTful API interface, this tool can be easily integrated with O&M (orchestration and management) tools such as Ansible, Terraform etc. for complete end-to-end automation of Day-1 and Day-2 operations for bare-metal server infrastructure.</p>
+          <h2 class="o-3 text-secondary">A Simplified Approach</h2>
+      </div>
+    </section>
+    <section class=" section">
+          <div class="container"><h2 class="text-primary"> Key benefits of BMA:</h2>
+          <p>
+          RedefinIT BMA reduces the complexity in bare-metal server deployment by providing a simplified approach to automate the OS installation and Firmware update process. BMA significantly reduces the cost as well as the time consumption of both processes. Some of the notable advantages are as follows:
+          </p></div>
+      <div class="container container-mobile grid wide-gap">
+        <div class="o-1">
+          <ul class="product-list">
+            <li>Deploys bare-metal servers with OS faster. </li>
+            <li>Combines f/w update and OS installation into single task to one board new servers within minutes </li>
+            <li>Bulk deployment with ease and maximum parallelization to reduce time to bring up the environment. </li>
+          </ul>
+        </div>
+        <div class="product-illustration o-2" >
+          <img src="/images/server2.png" alt="">
+        </div>
+        <div class="product-illustration o-4" >
+          <img src="/images/server2.png" alt="">
+        </div>
+        <div class="o-3">
+          <ul class="product-list">
+            <li>Single tool for provisioning multiple hardware vendors. Current version supports HPE and Dell servers.</li>
+            <li>Single tool for deploying multiple operating systems and hypervisors. Current version supports RHEL, VMWare ESXi. More operating systems support in the roadmap.</li>
+            <li>The deployment and provisioning performed using OOB (Out Of Band management network) networking to avoid any interference with production environment.</li>
+          </ul>
+        </div>
+        <div class="o-5">
+          <ul class="product-list">
+            <li>Easily integrates BMA with O&M (Orchestration and management) tools such as Ansible, Terraform using the simple REST API servers.</li>
+            <li>Eliminates dependency on security vulnerable PXE, IPMI, DHCP and rely on open standards and secure alternatives such as Redfish, SSL encrypted communication (HTTPS). Uses HTTPS to communicate with the server BMC.</li>
+            <li>Reduces pre-deployment preparation efforts by directly accepting OS installation media as-is from OS vendors. </li>
+          </ul>
+        </div>
+        <div class="product-illustration o-6" >
+          <img src="/images/server2.png" alt="">
+        </div>
+        
+        
+      </div>
+    </section>
+
+    <!-- Key Features  -->
+
+    <section class="bg-dark section">
+      <div class="container"><h2 class="text-secondary">Features</h2>
+      <p>
+        RedefinIT BMA uses modern industry standard technologies such as DMTF Redfish, Virtual Media, UEFI, HTTPS/TLS  for faster, reliable and secure bare-metal server provisioning. This product not only supports multi-vendor server hardware and operating systems but also hypervisors, making it a versatile tool in the modern enterprise datacenter. Some of the significant features are as follows:
+      </p></div>
+  <div class="container container-mobile grid wide-gap">
+    <div class="o-1">
+      <ul class="product-list">
+        <li>API-driven OS provisioning tool using secure REST API interface.</li>
+        <li>Uses modern industry standard approach using Redfish (instead of IPMI) and BMC’s Virtual Media feature instead of PXE for presenting the OS media to the servers.</li>
+        <li>Hardware discovery using Redfish API to BMC instead of OS based hardware discovery to speed up the hardware discovery process.</li>
+        <li>Uses kickstart for achieving unattended OS installation.</li>
+        
+        
+      </ul>
+    </div>
+    <div class="o-2">
+      <ul class="product-list">
+        <li>Configures local storage drives using Redfish API.</li>
+        <li>Option to perform Firmware update abstracting hardware vendor-specific update tools.</li>
+        <li>Built for bare-metal provisioning as against supporting Virtual Machines too.</li>
+        <li>JSON format data input.</li>
+        <li>Supports multiple hardware vendors.</li>
+        
+      </ul>
+    </div>
+  </div>
+    <div class="product-illustration o-2" >
+      <img src="/images/server.png" alt="">
+    </div>
+    <div class="container container-mobile grid wide-gap">
+      <div class="o-1">
+        <ul class="product-list">
+          <li>Supports operating systems including CentOS, RHEL, SUSE, VMWare ESXi, and Windows.</li>
+          <li>Supports multi-vendor hardware that is DMTF Redfish® compliant (HPE, Dell to start).</li>
+          <li>Supports multiple operating systems (ESXi, RHEL, CentOS, Ubuntu, SLES, Windows).</li>
+          <li>Static IP assignment support.</li>
+          
+          
+        </ul>
+      </div>
+      <div class="o-2">
+        <ul class="product-list">
+          <li>Atomic installation of OS (eliminating need for first boot operations).</li>
+          <li>Installs and upgrades Firmware.</li>
+          <li>Injecting OS drivers into the OS media before the installation.</li>
+          <li>Supports bulk deployment.</li>
+          <li>JSON data format.</li>
+        </ul>
+      </div>
+    </div> 
+</section>
+
+<!-- How it Works -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-primary">How it Works</h2>
+    <p>Image to be added here</p>  
+  </div>
+</section>
+
+<!-- Use Cases -->
+
+<section class="section">
+  <div class="container">
+    <h2 class="text-primary">Use Cases</h2>
+    <h3 class="subhead">VCF Automation
+    </h3>
+    <p>VCF deployment needs the physical hosts installed with the right version of ESXi hypervisor; which is installed with an IP address from the management network assigned to one of its network ports. The VCF software can automate the rest of the steps in creating VCF environment with VCenter, VSAN and NSX, ready for production.</p>
+     <p> VSAN needs local drives in a clean state without any filesystem partitions as it can be tedious to cleanup the drives before deploying the servers to VCF.
+      If the initial physical hosts deployment can be automated, then end-to-end automation can be achieved for VCF Day-1 and Day-2 operations. </p>
+      <p>BMA can automate bare-metal physical hosts deployment with the following:</p>
+      <ol>
+        <li>Updates the server Firmware using Firmware updates bundle in ISO format.</li>
+        <li>Installs OS with the following customizations:
+          <ol>
+            <li>Assigns management IP address to one NIC.</li>
+            <li>Cleanup of all local drives by removing any pre-existing filesystem partitions.</li>
+            <li>Enables/disables services as mandated by VCF pre-requisites.</li>
+          </ol>
+        </li>
+        
+      </ol>
+
+  </div>
+</section>
+  <section class="section container">
+    <h2 class="text-primary">Kubernetes Containers Platformation</h2>
+    <p>With the increasing adoption of container platforms for running enterprise applications, there is an opportunity to eliminate the licensing costs and performance costs from virtualization. The containers can give the isolation and multi-tenancy to run multiple workloads on a single host which has so far been possible only with virtualization. However, most container platform deployments are based on virtualization infrastructure as against physical infrastructure.This is in part due to hesitancy to run containers on bare-metal servers without adding a virtualization layer in between the physical infrastructure and the container platform. The primary reason is the complexity involved with managing the bare-metal servers, which gets worse with managing multi-vendor hardware. The challenges with bare-metal servers does not exist in the virtualization as a VM is the same irrespective of the underlying physical infrastructure. The tooling for virtualized environment can be totally independent of the vendor of the underlying physical hardware. However, this is not the case with multi-vendor bare-metal infrastructure.There will be significant cost saving and increased utilization of compute resources when the container platforms run on bare-metal servers. This needs tooling that allow the deployment and provisioning to be fully automated with multi-vendor hardware support. The minimum the automation code to handle different hardware (with different model/generation/vendor), the better the automation experience. 
+    </p>
+  </section>
+  <section class="section container text-center">
+    <h2>Try BMA by <span class="text-primary">Redifin<span class="text-secondary">IT</span></span> Today</h2>
+    <a class="btn" href="form.html">Ask for a Trial</a>
+  </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+          <div>
+            <a class="monogram" href="index.html"
+              ><h1 class="logo">
+                Redifin<span class="nav--highlight">IT</span>
+              </h1></a
+            >
+            <p>RedefinIT Technologies Pvt Ltd</br>
+              103 Carleston Nest Apt,</br>
+              17 Lloyd Rd, Cooke Town,</br>
+              Bengaluru - 560005, Karnataka</br>
+              India
+              </p>
+            <p>Copyright &copy; 2021</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="bma.html">Product</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>

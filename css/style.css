@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --primary-color: #0f62ab;
+  --secondary-color: #108040;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--light-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar h1 {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.monogram {
+  padding: 0;
+}
+
+.nav--highlight {
+  color: var(--secondary-color);
+}
+
+.nav--primary {
+  color: var(--primary-color);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navlink {
+  color: var(--primary-color);
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navlink:hover {
+  border-bottom: 3px var(--primary-color) solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar nav .btn {
+  margin-left: 3em;
+}
+
+.navlist .btn {
+  justify-self: center;
+}
+
+/* Showcase */
+.showcase {
+  height: calc(100vh - 70px);
+  background-image: url(../images/datacenter.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--dark-color);
+  background-blend-mode: overlay;
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.showcase p {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+
+.showcase-text {
+  padding-left: 4em;
+}
+
+.btn-showcase {
+  margin: 20px;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase .buttons a {
+  margin: 0 1em;
+}
+
+/* Our Product */
+
+.sticky-logo {
+  width: 25%;
+  margin: auto;
+}
+
+.product {
+  padding-bottom: 3rem;
+}
+
+.product__text {
+  font-size: 1.2rem;
+}
+
+.footer h1 {
+  color: var(--primary-color);
+}
+
+/* BMA */
+
+.section {
+  /* margin-top: 5em;
+  margin-bottom: 5em; */
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.product-list li {
+  list-style-image: url("/images/arrow-bma.png");
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 2em;
+}
+
+.product-illustration {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.section ol {
+  font-weight: 700;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.section ol li {
+  padding-left: 0.5em;
+}
+
+ol li ol {
+  list-style-type: lower-roman;
+  margin-left: 3em;
+  margin-top: 1em;
+}
+
+.blog {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blog-card {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.blog-card:hover {
+  transform: translateY(-2%);
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar h1 .logo {
+    justify-self: flex-start;
+  }
+
+  .monogram {
+    justify-self: flex-start;
+  }
+
+  .navsecondary {
+    flex-direction: column;
+  }
+
+  .navbar .flex {
+    justify-content: space-evenly;
+  }
+
+  .navlist {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .navlink {
+    font-size: 1.2em;
+  }
+
+  .nav-toggle {
+    padding: 0.77em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    z-index: 1000;
+  }
+
+  .nav-open .nav {
+    transform: translateX(0%);
+  }
+
+  .nav-open .nav-toggle {
+    position: fixed;
+  }
+
+  .nav-open .hamburger {
+    transform: rotate(0.625turn);
+  }
+
+  .nav-open .hamburger::after {
+    opacity: 0;
+  }
+
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: var(--dark-color);
+    width: 30px;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .hamburger::before {
+    top: 6px;
+  }
+  .hamburger::after {
+    bottom: 6px;
+  }
+
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase h1 {
+    font-size: 3rem;
+  }
+
+  .showcase p {
+    margin: 20px 0;
+    font-size: 1rem;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  .product-list li {
+    margin: 1em 2em;
+  }
+}
