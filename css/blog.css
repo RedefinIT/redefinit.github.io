@@ -16,16 +16,32 @@
   font-style: italic;
 }
 
+.blog-link {
+  color: var(--secondary-color);
+}
+
+.bullet-list {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* SUBHEADS */
 
 .sh-1 {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 3rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .sh-2 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-size: 2rem;
   font-weight: 700;
 }
