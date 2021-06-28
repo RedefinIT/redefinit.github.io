@@ -13,6 +13,16 @@
   padding: 0 40px;
 }
 
+.card-grid {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  /* margin: 10px; */
+  height: 100%;
+}
+
 .card {
   background-color: #fff;
   color: #333;
@@ -22,8 +32,8 @@
   margin: 10px;
 }
 
-.illustration {
-  width: 90%;
+.product-name {
+  font-size: 4rem;
 }
 
 .btn {
@@ -216,6 +226,9 @@ h2 {
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
+.grid-4 {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
 
 .blog-grid {
   grid-template-columns: repeat(4, 1fr);
@@ -243,6 +256,10 @@ h2 {
 
   .header {
     height: 35vh;
+  }
+
+  .product-name {
+    font-size: 2rem;
   }
 }
 

@@ -80,6 +80,10 @@ pre {
   color: var(--primary-color);
 }
 
+nav .nav-toggle {
+  opacity: 0;
+}
+
 .navbar ul {
   display: flex;
 }
@@ -144,23 +148,38 @@ pre {
   margin: 20px;
 }
 
-.showcase-form {
-  position: relative;
-  top: 60px;
-  height: 350px;
-  width: 400px;
-  padding: 40px;
-  z-index: 100;
-  justify-self: flex-end;
-  animation: slideInFromRight 1s ease-in;
+.form-page {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
 }
 
-.showcase-form .form-control {
+.form {
+  width: 400px;
+  margin: 3rem auto;
+}
+
+.form-name {
+  display: flex;
+}
+
+.form h2 {
+  margin: 2rem auto;
+}
+
+.form h2,
+.form p,
+.form .btn {
+  text-align: center;
+}
+
+.form .form-control {
   margin: 30px 0;
 }
 
-.showcase-form input[type="text"],
-.showcase-form input[type="email"] {
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
@@ -168,7 +187,11 @@ pre {
   font-size: 16px;
 }
 
-.showcase-form input:focus {
+.form textarea {
+  width: 100%;
+}
+
+.form input:focus {
   outline: none;
 }
 
@@ -176,11 +199,17 @@ pre {
   margin: 0 1em;
 }
 
+.about-company {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 /* Our Product */
 
-.sticky-logo {
-  width: 25%;
-  margin: auto;
+.sticky-logo img {
+  display: block;
+  max-width: 140px;
+  margin: 0 auto;
 }
 
 .product {
@@ -193,6 +222,38 @@ pre {
 
 .footer h1 {
   color: var(--primary-color);
+}
+
+.footer a {
+  color: var(--light-color);
+  transition: 500ms;
+}
+
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
+.footer .social {
+  text-align: right;
+  letter-spacing: 10px;
+}
+
+.product h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product h3 a {
+  color: var(--dark-color);
+  transition: 500ms;
+}
+
+.product h3 a:hover {
+  color: var(--secondary-color);
+}
+
+.product .grid {
+  padding-bottom: 10px;
 }
 
 /* BMA */
@@ -249,6 +310,10 @@ ol li ol {
 
 /* Tablets and under */
 @media (max-width: 768px) {
+  nav .nav-toggle {
+    opacity: 1;
+  }
+
   .nav {
     position: fixed;
     background-color: rgb(255, 255, 255);
@@ -281,10 +346,15 @@ ol li ol {
 
   .navsecondary {
     flex-direction: column;
+    max-height: 500px;
   }
 
   .navbar .flex {
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+
+  .navbar nav .btn {
+    margin-left: 20px;
   }
 
   .navlist {
@@ -295,7 +365,7 @@ ol li ol {
     justify-content: space-evenly;
     padding: 0;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 125px;
   }
 
   .navlink {
@@ -388,13 +458,15 @@ ol li ol {
     padding-left: 0;
   }
 
-  .showcase-form {
-    justify-self: center;
-    margin: auto;
-    animation: slideInFromBottom 1s ease-in;
+  .form {
+    width: auto;
   }
 
   .product-list li {
     margin: 1em 2em;
+  }
+
+  .footer .social {
+    text-align: left;
   }
 }
