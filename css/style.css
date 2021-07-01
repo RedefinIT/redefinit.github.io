@@ -70,6 +70,7 @@ pre {
 
 .monogram {
   padding: 0;
+  user-select: none;
 }
 
 .nav--highlight {
@@ -213,7 +214,12 @@ select,
 .about-us {
   margin-bottom: 10px;
   padding-bottom: 10px;
-  min-height: 50vh;
+  min-height: 100vh;
+}
+
+.about-us p,
+.about-company h3 {
+  margin-top: 2rem;
 }
 
 .main-heading {
