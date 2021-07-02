@@ -87,7 +87,7 @@
       </div>
       <h3 class="sh-1">Alternatives to PXE</h3>
       <h3 class="sh-2">iPXE</h3>
-      <p>?iPXE is a sophisticated boot program with advanced features such as HTTPS, Digest authentication, POST requests, scripts, menus, customizable code signing etc?. ?iPXE also offers boot from a variety of sources such as HTTP, iSCSI SAN, FCoE, WAN etc. iPXE works as the initial bootloader with an iPXE configuration file that selects the next bootloader based on the MAC address or other criteria. Though there are different ways to let servers boot into iPXE, most implementations use the same old PXE/TFTP/DHCP to boot iPXE first, and then use it to chain load the actual OS installation media. This feature is included in UEFI firmware for some servers where there is no need for an additional TFTP server. Setting up iPXE environment is not simple as it involves setting up DHCP and TFTP (in certain scenarios) first.</p>
+      <p>iPXE is a sophisticated boot program with advanced features such as HTTPS, Digest authentication, POST requests, scripts, menus, customizable code signing etc?. ?iPXE also offers boot from a variety of sources such as HTTP, iSCSI SAN, FCoE, WAN etc. iPXE works as the initial bootloader with an iPXE configuration file that selects the next bootloader based on the MAC address or other criteria. Though there are different ways to let servers boot into iPXE, most implementations use the same old PXE/TFTP/DHCP to boot iPXE first, and then use it to chain load the actual OS installation media. This feature is included in UEFI firmware for some servers where there is no need for an additional TFTP server. Setting up iPXE environment is not simple as it involves setting up DHCP and TFTP (in certain scenarios) first.</p>
       
       <h3 class="sh-2">UEFI-HTTP Boot </h3> 
       <p>UEFI-HTTP boot is a UEFI feature for net-booting which is similar to PXE and uses HTTP instead of TFT.  UEFI HTTP Boot can be used to chainload iPXE from a HTTP server, eliminating the need for a separate TFTP server. This is helpful when iPXE support is not part of the server UEFI firmware. However, it relies on DHCP for IP configuration. Also, UEFI network stack only supports HTTP and not HTTPS. So, there is a dependency on HTTP net-booting which is not a problem in most datacenters. But in high security environments where HTTP is not allowed, this dependency can be a problem.</p>
@@ -117,7 +117,16 @@
       <a href="../bma.html" class="btn">Ask for Trial</a>
 
       <h3 class="sh-2">References:</h3>
+      <a>Network boot in a zero trust environment. By James Brian Richardson.</a>
       <a class="blog-link" href="https://software.intel.com/content/www/us/en/develop/blogs/network-boot-in-a-zero-trust-environment.html">https://software.intel.com/content/www/us/en/develop/blogs/network-boot-in-a-zero-trust-environment.html</a>
+      <a>Risks of Using the Intelligent Platform Management Interface (IPMI)</a>
+      <a class="blog-link" href="https://us-cert.cisa.gov/ncas/alerts/TA13-207A">https://us-cert.cisa.gov/ncas/alerts/TA13-207A</a>
+      <a>Sold Down the River (a paper on IPMI security vulnerabilities). By Dan Farmer</a>
+      <a class="blog-link" href="http://fish2.com/ipmi/river.pdf">http://fish2.com/ipmi/river.pdf</a>
+      <a>IPMI: The most dangerous protocol you've never heard of. By Paul F. Roberts</a>
+      <a class="blog-link" href="https://www.computerworld.com/article/2708437/ipmi--the-most-dangerous-protocol-you-ve-never-heard-of.html">https://www.computerworld.com/article/2708437/ipmi--the-most-dangerous-protocol-you-ve-never-heard-of.html</a>
+      <a>DHCP defined and how it works. By Zeus Kerravala</a>
+      <a class="blog-link" href="https://www.networkworld.com/article/3299438/dhcp-defined-and-how-it-works.html">https://www.networkworld.com/article/3299438/dhcp-defined-and-how-it-works.html</a>
     </section>
     
     <!-- Footer -->
