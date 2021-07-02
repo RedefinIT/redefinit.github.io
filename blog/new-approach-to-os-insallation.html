@@ -85,7 +85,7 @@
           </ul>
         <p>While latest generation servers come with both Legacy BIOS and UEFI boot options, the factory settings enable UEFI for default boot mode. HPE Gen9 and later generations have UEFI set as the default boot mode.</p>
       </div>
-      <h3 class="sh-1">Alternatives to PXE</h3>
+      <h2 class="sh-1">Alternatives to PXE</h2>
       <h3 class="sh-2">iPXE</h3>
       <p>iPXE is a sophisticated boot program with advanced features such as HTTPS, Digest authentication, POST requests, scripts, menus, customizable code signing etc?. ?iPXE also offers boot from a variety of sources such as HTTP, iSCSI SAN, FCoE, WAN etc. iPXE works as the initial bootloader with an iPXE configuration file that selects the next bootloader based on the MAC address or other criteria. Though there are different ways to let servers boot into iPXE, most implementations use the same old PXE/TFTP/DHCP to boot iPXE first, and then use it to chain load the actual OS installation media. This feature is included in UEFI firmware for some servers where there is no need for an additional TFTP server. Setting up iPXE environment is not simple as it involves setting up DHCP and TFTP (in certain scenarios) first.</p>
       
