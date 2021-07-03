@@ -104,7 +104,7 @@ nav .nav-toggle {
 }
 
 .navbar nav .btn {
-  margin-left: 3em;
+  margin-left: 2em;
 }
 
 .navlist .btn {
@@ -290,6 +290,10 @@ select,
 
 /* BMA */
 
+.banner-img {
+  max-width: 200px;
+}
+
 .section {
   /* margin-top: 5em;
   margin-bottom: 5em; */
@@ -334,6 +338,7 @@ ol li ol {
   padding: 20px;
   border-radius: 15px;
   height: 100%;
+  transition: transform 250ms ease-in;
 }
 
 .blog-card:hover {
@@ -488,6 +493,12 @@ ol li ol {
     text-align: center;
     margin-top: 40px;
     padding-left: 0;
+  }
+
+  .sticky-logo img {
+    display: block;
+    max-width: 70px;
+    margin: 0 auto;
   }
 
   .form {

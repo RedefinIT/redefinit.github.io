@@ -16,8 +16,14 @@
   font-style: italic;
 }
 
+.blog-reference {
+  margin-bottom: 0;
+}
+
 .blog-link {
+  font-weight: bold;
   color: var(--secondary-color);
+  margin-top: 0;
 }
 
 .bullet-list {
@@ -55,5 +61,13 @@
 @media (max-width: 768px) {
   .blog-heading {
     font-size: 2.5rem;
+  }
+
+  .sh-1 {
+    font-size: 2rem;
+  }
+
+  .sh-2 {
+    font-size: 1.5rem;
   }
 }

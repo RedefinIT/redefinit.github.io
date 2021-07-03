@@ -75,6 +75,9 @@
 .header-small {
   height: 40vh;
 }
+.header-xsmall {
+  height: 20vh;
+}
 
 .header__text {
   padding: 30px;
@@ -84,7 +87,8 @@
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
@@ -233,8 +237,13 @@ h2 {
 .blog-grid {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
+}
+
+.blog-card {
+  max-width: 350px;
+  margin: auto;
 }
 
 .span-col {
