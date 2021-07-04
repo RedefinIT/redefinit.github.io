@@ -7,23 +7,41 @@
 }
 
 .blog-heading {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
 }
 
 .blog-byline {
   font-weight: 400;
   font-style: italic;
+  margin-left: 2rem;
 }
 
 .blog-reference {
   margin-bottom: 0;
 }
 
+.blog-links {
+  list-style-type: disc;
+}
+
+.blog-links li {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.blog-links li:first-of-type {
+  margin-top: 1rem;
+}
+
 .blog-link {
   font-weight: bold;
   color: var(--secondary-color);
-  margin-top: 0;
+  transition: 250ms ease-in;
+}
+
+.blog-link:hover {
+  color: var(--dark-color);
 }
 
 .bullet-list {
@@ -41,14 +59,14 @@
 
 .sh-1 {
   margin-top: 1.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .sh-2 {
   margin-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
