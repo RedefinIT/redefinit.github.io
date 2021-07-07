@@ -78,9 +78,11 @@
       <div class="container container-mobile grid wide-gap">
         <div class="o-1">
           <ul class="product-list">
-            <li>Deploys bare-metal servers with OS faster. </li>
-            <li>Combines f/w update and OS installation into single task to one board new servers within minutes </li>
-            <li>Bulk deployment with ease and maximum parallelization to reduce time to bring up the environment. </li>
+            <li>BMA software is easy to setup and get started. Requires minimum preparation effort for the deployment. </li>
+            <li>Uses secure protocols and technologies for network based OS deployment on bare-metal servers. Uses OOB networking for network booting and deployment. </li>
+            <li>Single interface for deploying both Firmware updates and OS. </li>
+            <li>Web client offers responsive and intuitive UI. Takes minimum inputs from the user and converts to actual hardware specific data using hardware discovery. </li>
+            <li>Capable of handling large scale deployment with ease. Reduces deployment time by running tasks in parallel. </li>
           </ul>
         </div>
         <div class="product-illustration o-2" >
@@ -91,16 +93,17 @@
         </div>
         <div class="o-3">
           <ul class="product-list">
-            <li>Single tool for provisioning multiple hardware vendors. Current version supports HPE and Dell servers.</li>
-            <li>Single tool for deploying multiple operating systems and hypervisors. Current version supports RHEL, VMWare ESXi. More operating systems support in the roadmap.</li>
-            <li>The deployment and provisioning performed using OOB (Out Of Band management network) networking to avoid any interference with production environment.</li>
+            <li>Single tool for deploying multiple operating systems and hypervisors. Current version supports RHEL, VMWare ESXi. More operating systems support in the roadmap. </li>
+            <li>Firmware deployment feature uses the hardware vendor provided Firmware update bundles delivered as a single ISO image. </li>
+            <li>Supports server hardware from multiple vendors. Current version supports HPE Gen10 and Dell Gen14 (or later) servers. </li>
+            <li>Supports hardware platform management tools HPE OneView and Dell OpenManage for combining hardware provisioning and OS deployment. </li>
           </ul>
         </div>
         <div class="o-5">
           <ul class="product-list">
-            <li>Easily integrates BMA with O&M (Orchestration and management) tools such as Ansible, Terraform using the simple REST API servers.</li>
-            <li>Eliminates dependency on security vulnerable PXE, IPMI, DHCP and rely on open standards and secure alternatives such as Redfish, SSL encrypted communication (HTTPS). Uses HTTPS to communicate with the server BMC.</li>
-            <li>Reduces pre-deployment preparation efforts by directly accepting OS installation media as-is from OS vendors. </li>
+            <li>Exposes REST API for supporting Infrastructure-as-Code and can be integrated with DevOps processes. </li>
+            <li>Uses industry standard Kickstart configuration for implementing OS customization. </li>
+            <li>Easily integrates BMA with O&M (Orchestration and management) tools such as Ansible, Terraform using the simple REST API servers. </li>
           </ul>
         </div>
         <div class="product-illustration o-6" >
@@ -126,8 +129,6 @@
         <li>Uses modern industry standard approach using Redfish (instead of IPMI) and BMC’s Virtual Media feature instead of PXE for presenting the OS media to the servers.</li>
         <li>Hardware discovery using Redfish API to BMC instead of OS based hardware discovery to speed up the hardware discovery process.</li>
         <li>Uses kickstart for achieving unattended OS installation.</li>
-        
-        
       </ul>
     </div>
     <div class="o-2">
@@ -157,11 +158,10 @@
       </div>
       <div class="o-2">
         <ul class="product-list">
-          <li>Atomic installation of OS (eliminating need for first boot operations).</li>
           <li>Installs and upgrades Firmware.</li>
           <li>Injecting OS drivers into the OS media before the installation.</li>
           <li>Supports bulk deployment.</li>
-          <li>JSON data format.</li>
+          <li>Accepts input in JSON format. CSV support soon! </li>
         </ul>
       </div>
     </div> 
