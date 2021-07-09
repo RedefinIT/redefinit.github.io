@@ -169,12 +169,44 @@
 <section class="section">
   <div class="container">
     <h2 class="text-primary">How it Works</h2>
-    <h3 class="subhead">Sub Head here</h3>
-    <img src="/images/bma-slide1.jpeg" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ducimus amet consequatur nam beatae, incidunt magnam quas aspernatur nisi ullam repellat provident inventore, modi ratione nihil explicabo voluptas vero delectus!</p>
-    <h3 class="subhead">Sub Head here</h3>
+    <p>BMA allows automated deployment of OS and firmware updates using ISO (ISO-9660) format images that are either vendor provided or custom created. At the end of the deployment the server will be ready with operating system which is accessible over network using the IP address assigned by BMA.</p>
+    <h4 class="subhead">Pre-requisites</h4>
+    <p>BMA software is distributed as installable package which can be installed on a Linux machine.  The host should have network connectivity to server BMC. The network connectivity to also hosts to allow BMA to connect to the installed host operating system post deployment. This is required for BMA to ping and determine the sucessful completion of the OS on the bare-metal server.</p>
+    <p>BMA requires:</p>
+    <ul class="product-list">
+      <li>RHEL/Centos 7.8, 8.0 or later</li>
+      <li>Python 3.6.8</li>
+      <li>NGINX 1.14.1 or later</li>
+    </ul>
+    <h3 class="subhead">Overview</h3>
     <img src="/images/bma-slide2.jpeg" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ducimus amet consequatur nam beatae, incidunt magnam quas aspernatur nisi ullam repellat provident inventore, modi ratione nihil explicabo voluptas vero delectus!</p>
+    <p>BMA has built-in images repository which is a HTTPS File Server powered by NGINX. It interfaces with bare-metal servers for device discovery and deployment. </p>
+    <p><b>BMA operates in two modes:</b></p>
+    <p><b>Direct BMC</b> - BMA uses Redfish to interact with the server BMC to perform the discovery and deployment. The supported BMC's are HPE iLO5 and Dell iDRAC9. </p>
+    <p><b>Through Hardware Managers</b> - BMA interfaces with Hardware managers to perform discovery and deployment for the servers that are managed. The hardware provisioning capabilities of the hardware managers can be combined with BMA's OS deployment capabilities to achieve end-to-end server lifecycle management.</p>
+    <p><b>Preparation for basic OS deployment using direct BMC:</b></p>
+    <ul class="product-list">
+      <li>Upload the OS installation media ISO image. </li>
+      <li>Upload Firmware bundle ISO image</li>
+      <li>Generate deployment specification JSON file or use web-GUI. Specify the following:</li>
+      <li>
+        <ul>
+          <li>BMC IP, username, password</li>
+          <li>OS image</li>
+          <li>Firmware bundle image</li>
+          <li>For each host, the static IP, netmask, gateway and DNS.</li>
+          <li>Network port identified using adapter-id and port-id. (Refer to next section for network ports identification)</li>
+          <li>Target OS drive. </li>
+        </ul>
+      </li>
+    </ul>
+    <p><b>Deployment Process</b></p>
+    <p>The following diagram illustrates the typical deployment process by BMA:</p>
+    <img src="/images/bma-slide1.jpeg" alt="">
+    <p><b>Identifying network ports for the server</b></p>
+    <img src="/images/iLO_NIC_Info.png" alt="">
+    <p><b>Identifying storage drives for the server</b></p>
+    <img src="/images/iLO_Storage_Drives_Info.png" alt="">
   </div>
 </section>
 
