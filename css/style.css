@@ -295,14 +295,13 @@ select,
 }
 
 .section {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .product-list li {
   list-style-image: url("/images/arrow-bma.png");
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1rem;
   margin: 2em;
 }
 
@@ -311,7 +310,7 @@ select,
   margin: 0 auto;
 }
 
-.section ol {
+/* .section ol {
   font-weight: 700;
   margin-left: 2em;
   margin-top: 0;
@@ -323,6 +322,19 @@ select,
 
 ol li ol {
   list-style-type: lower-roman;
+} */
+.page-list ul {
+  margin-left: 2em;
+  margin-top: 0;
+  list-style-type: disc;
+}
+
+.page-list ul li {
+  padding-left: 0.5em;
+}
+
+.page-list ul li ul {
+  list-style-type: circle;
 }
 
 .blog {
