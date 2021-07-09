@@ -166,7 +166,7 @@
 </section>
 
 <!-- How it Works -->
-<section class="section">
+<section class="section page-list">
   <div class="container">
     <h2 class="text-primary">How it Works</h2>
     <p>BMA allows automated deployment of OS and firmware updates using ISO (ISO-9660) format images that are either vendor provided or custom created. At the end of the deployment the server will be ready with operating system which is accessible over network using the IP address assigned by BMA.</p>
@@ -185,11 +185,10 @@
     <p><b>Direct BMC</b> - BMA uses Redfish to interact with the server BMC to perform the discovery and deployment. The supported BMC's are HPE iLO5 and Dell iDRAC9. </p>
     <p><b>Through Hardware Managers</b> - BMA interfaces with Hardware managers to perform discovery and deployment for the servers that are managed. The hardware provisioning capabilities of the hardware managers can be combined with BMA's OS deployment capabilities to achieve end-to-end server lifecycle management.</p>
     <p><b>Preparation for basic OS deployment using direct BMC:</b></p>
-    <ul class="product-list">
+    <ul>
       <li>Upload the OS installation media ISO image. </li>
       <li>Upload Firmware bundle ISO image</li>
-      <li>Generate deployment specification JSON file or use web-GUI. Specify the following:</li>
-      <li>
+      <li>Generate deployment specification JSON file or use web-GUI. Specify the following:
         <ul>
           <li>BMC IP, username, password</li>
           <li>OS image</li>
@@ -206,7 +205,7 @@
     <h3><b>Identifying network ports for the server</b></h3>
     <img src="/images/iLO_NIC_Info.png" alt="" style="width:500px;">
     <h3><b>Identifying storage drives for the server</b></h3>
-    <img src="/images/iLO_Storage_Drives_Info.png" alt="" style="width:500px;height:500px;">
+    <img src="/images/iLO_Storage_Drives_Info.png" alt="" style="width:500px;">
   </div>
 </section>
 
