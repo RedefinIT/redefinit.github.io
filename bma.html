@@ -123,20 +123,23 @@
   <div class="container container-mobile grid wide-gap">
     <div class="o-1">
       <ul class="product-list">
-        <li>API-driven OS provisioning tool using secure REST API interface.</li>
-        <li>Uses modern industry standard approach using Redfish (instead of IPMI) and BMC’s Virtual Media feature instead of PXE for presenting the OS media to the servers.</li>
-        <li>Hardware discovery using Redfish API to BMC instead of OS based hardware discovery to speed up the hardware discovery process.</li>
-        <li>Uses kickstart for achieving unattended OS installation.</li>
+        <li>Installs operating system using vendor provided or custom ISO image and performs basic OS configuration for hostname, IP address and network settings.</li>
+        <li>Deploys Firmware updates using vendor provided bootable ISO images containing Firmware bundle.</li>
+        <li>Allows the user to choose desired OS drive and NIC using simple sequence number based identifier. (refer to How it works for details)</li>
+        <li>Allows OS customization through OS supported Kickstart configuration files. The tool includes default kickstart files. Custom kickstarts can be used for advanced OS customization. </li>
+        <li>Capable of bulk deployment of up to 50 servers in a batch. All servers in a batch are deployed simultaneously.</li>
       </ul>
     </div>
     <div class="o-2">
       <ul class="product-list">
-        <li>Configures local storage drives using Redfish API.</li>
-        <li>Option to perform Firmware update abstracting hardware vendor-specific update tools.</li>
-        <li>Built for bare-metal provisioning as against supporting Virtual Machines too.</li>
-        <li>JSON format data input.</li>
-        <li>Supports multiple hardware vendors.</li>
-
+        <li>The host IP address can be assigned in multiple ways.
+          <ul>
+            <li>Static - IP address is assigned using user specified value.</li>
+            <li>Static-Range - IP address is assigned using a range of IP addresses.</li>
+            <li>Address-Pool - IP address is assigned using the external address-pool provided by IP address management tools. </li>
+            <li>DHCP - IP address is assigned using DHCP service in the network.</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -149,14 +152,11 @@
         <li>Supports operating systems including CentOS, RHEL, SUSE, VMWare ESXi, and Windows.</li>
         <li>Supports multi-vendor hardware that is DMTF Redfish® compliant (HPE, Dell to start).</li>
         <li>Supports multiple operating systems (ESXi, RHEL, CentOS, Ubuntu, SLES, Windows).</li>
-        <li>Static IP assignment support.</li>
-
-
       </ul>
     </div>
     <div class="o-2">
       <ul class="product-list">
-        <li>Installs and upgrades Firmware.</li>
+        <li>Hardware discovery uses Redfish API to BMC instead of OS-based hardware discovery to speed up the hardware discovery process.</li>
         <li>Injecting OS drivers into the OS media before the installation.</li>
         <li>Supports bulk deployment.</li>
         <li>Accepts input in JSON format. CSV support soon! </li>
