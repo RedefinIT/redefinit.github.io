@@ -103,7 +103,7 @@
       <ul class="product-list">
         <li>Exposes REST API for supporting Infrastructure-as-Code and can be integrated with DevOps processes. </li>
         <li>Uses industry standard Kickstart configuration for implementing OS customization. </li>
-        <li>Easily integrates BMA with O&M (Orchestration and management) tools such as Ansible, Terraform using the simple REST API servers. </li>
+        <li>Easily integrates with O&M (Orchestration and management) tools such as Ansible, Terraform using the simple REST API servers. </li>
       </ul>
     </div>
     <div class="product-illustration o-6" >
@@ -168,7 +168,7 @@
     <h2 class="text-primary">How it Works</h2>
     <p>BMA allows automated deployment of OS and firmware updates using ISO (ISO-9660) format images that are either vendor provided or custom created. At the end of the deployment the server will be ready with operating system which is accessible over network using the IP address assigned by BMA.</p>
     <h3 class="text-primary" >Pre-requisites</h3>
-    <p>BMA software is distributed as installable package which can be installed on a Linux machine.  The host should have network connectivity to server BMC. The network connectivity to also hosts to allow BMA to connect to the installed host operating system post deployment. This is required for BMA to ping and determine the sucessful completion of the OS on the bare-metal server.</p>
+    <p>BMA software is distributed as installable package which can be installed on a Linux machine. The tool requires network connectivity to the server BMC as well as network connectivity to the host OS primary network for post deployment actions. BMA uses installed host OS primary network to ping-test for detecting the OS installation completion. </p>
     <p><b>BMA requires:</b></p>
     <ul>
       <li>RHEL/Centos 7.8, 8.0 or later</li>
@@ -180,8 +180,8 @@
     <img src="/images/bma-slide2.jpeg" alt="">
     <p>BMA has built-in images repository which is a HTTPS File Server powered by NGINX. It interfaces with bare-metal servers for device discovery and deployment. </p>
     <p><b>BMA operates in two modes:</b></p>
-    <p><b>Direct BMC</b> - BMA uses Redfish to interact with the server BMC to perform the discovery and deployment. The supported BMC's are HPE iLO5 and Dell iDRAC9. </p>
-    <p><b>Through Hardware Managers</b> - BMA interfaces with Hardware managers to perform discovery and deployment for the servers that are managed. The hardware provisioning capabilities of the hardware managers can be combined with BMA's OS deployment capabilities to achieve end-to-end server lifecycle management.</p>
+    <p><b>Server BMC</b> - BMA uses Redfish to interact with the server BMC for hardware discovery and OS/ Firmware deployment. The supported BMC's are HPE iLO5 and Dell iDRAC9. </p>
+    <p><b>Hardware Managers</b> - BMA interfaces with Hardware managers to perform discovery and deployment for the servers that are managed. The hardware provisioning capabilities of the hardware managers can be combined with BMA's OS deployment capabilities to achieve end-to-end server lifecycle management.</p>
 
     <br/>
     <h3 class="text-primary">Preparation for basic OS deployment using direct BMC</h3>
