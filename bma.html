@@ -123,10 +123,13 @@
   <div class="container container-mobile grid wide-gap">
     <div class="o-1">
       <ul class="product-list">
-        <li>Installs operating system using vendor provided or custom ISO image and performs basic OS configuration for hostname, IP address and network settings.</li>
+        <li>Installs operating system using vendor provided or custom ISO image and performs basic
+          OS configuration for hostname, IP address and network settings.</li>
         <li>Deploys Firmware updates using vendor provided bootable ISO images containing Firmware bundle.</li>
-        <li>Allows the user to choose desired OS drive and NIC using simple sequence number based identifier. (refer to How it works for details)</li>
-        <li>Uses the well known Kickstart configuration for OS customization. The tool includes default Kickstart files. Custom Kickstarts can be used for advanced OS customization. </li>
+        <li>Allows the user to choose desired OS drive and NIC using simple sequence number
+          based identifier. (refer to How it works for details)</li>
+        <li>Uses the well known Kickstart configuration for OS customization.
+          The tool includes default Kickstart files. Custom Kickstarts can be used for advanced OS customization. </li>
       </ul>
     </div>
     <div class="o-2">
@@ -165,9 +168,13 @@
 <section class="section page-list">
   <div class="container">
     <h2 class="text-primary">How it Works</h2>
-    <p>BMA allows automated deployment of OS and firmware updates using ISO (ISO-9660) format images that are either vendor provided or custom created. At the end of the deployment the server will be ready with operating system which is accessible over network using the IP address assigned by BMA.</p>
+    <p>BMA allows automated deployment of OS and firmware updates using ISO (ISO-9660) format images
+      that are either vendor provided or custom created. At the end of the deployment the server will be
+      ready with operating system which is accessible over network using the IP address assigned by BMA.</p>
     <h3 class="text-primary" >Pre-requisites</h3>
-    <p>BMA software is distributed as installable package which can be installed on a Linux machine. The tool requires network connectivity to the server BMC as well as to the host OS primary network. BMA uses installed host OS primary network to ping-test for detecting the OS installation completion. </p>
+    <p>BMA software is distributed as installable package which can be installed on a Linux machine.
+      The tool requires network connectivity to the server BMC as well as to the host OS primary network.
+      BMA uses installed host OS primary network to ping-test for detecting the OS installation completion. </p>
     <p><b>BMA requires:</b></p>
     <ul>
       <li>RHEL/Centos 7.8, 8.0 or later</li>
@@ -177,10 +184,15 @@
     <br/>
     <h3 class="text-primary">Overview</h3>
     <img src="/images/bma-slide2.jpeg" alt="">
-    <p>BMA has built-in images repository which is a HTTPS File Server powered by NGINX. It interfaces with bare-metal servers for device discovery and deployment. </p>
+    <p>BMA has built-in images repository which is a HTTPS File Server powered by NGINX.
+      It interfaces with bare-metal servers for device discovery and deployment. </p>
     <p><b>BMA operates in two modes:</b></p>
-    <p><b>Server BMC</b> - BMA uses Redfish to interact with the server BMC for hardware discovery and OS/ Firmware deployment. The supported BMC's are HPE iLO5 and Dell iDRAC9. </p>
-    <p><b>Hardware Managers</b> - BMA interfaces with Hardware managers to perform discovery and deployment for the servers that are managed. The hardware provisioning capabilities of the hardware managers can be combined with BMA's OS deployment capabilities to achieve end-to-end server lifecycle management.</p>
+    <p><b>Server BMC</b> - BMA uses Redfish to interact with the server BMC for hardware discovery and
+      OS/ Firmware deployment. The supported BMC's are HPE iLO5 and Dell iDRAC9. </p>
+    <p><b>Hardware Managers</b> - BMA interfaces with Hardware managers to perform discovery and
+      deployment for the servers that are managed. The hardware provisioning capabilities of
+      the hardware managers can be combined with BMA's OS deployment capabilities to achieve
+      end-to-end server lifecycle management.</p>
 
     <br/>
     <h3 class="text-primary">Preparation for basic OS deployment using direct BMC</h3>
@@ -201,14 +213,29 @@
     </ul>
     <br/>
     <h3 class="text-primary">Deployment Process</h3>
-    <p>The following diagram illustrates the typical deployment process by BMA:</p>
+    <p>The following diagram illustrates the typical deployment process using BMA:</p>
     <img src="/images/bma-slide1.jpeg" alt=""   >
     <br/>
     <h3 class="text-primary">Identifying network ports for the server</h3>
-    The OS
+    <p>BMA configures the host IP address using the network port (or NIC)
+      that is specified in the input JSON. The desired network port can be
+      specified using the parameters adapterId and portId.</p>
+    <p>The network adapters and ports are identified using 1-based index number used by
+      the server BMC when it enumerates them in the GUI or command-line output.</p>
+    <p>The following diagram shows HPE iLO5 screenshot with the network adapters information and also
+      shows how the JSON data to be coded for choosing a network port that should get the host IP Address:</p>
+
     <img src="/images/NIC_selection.png" alt="" style="width:1000px;">
+
+    <p>This approach eliminates need for using mac-address to specify network port to the OS deployer.</p>
     <br/>
     <h3 class="text-primary">Identifying storage drives for the server</h3>
+    <p>BMA configures the host IP address using the network port (or NIC) that is specified in the input JSON.
+      The desired network port can be specified using the parameters adapterId and portId.</p>
+    <p>The network adapters and ports are identified using 1-based index number used by
+      the server BMC when it enumerates them in the GUI or command-line output.</p>
+    <p>The following diagram shows HPE iLO5 screenshot showing network adapters information and
+      also shows how the JSON data to be coded for choosing a network port that should get the host IP Address:</p>
     <img src="/images/logicaldrive_selection.png" alt="" style="width:1000px;">
   </div>
 </section>
@@ -259,8 +286,8 @@
         Redefin<span class="nav--highlight">IT</span>
       </h1></a
       >
-      <p>RedefinIT Technologies Pvt Ltd</br>
-        Bengaluru, Karnataka</br>
+      <p>RedefinIT Technologies Pvt Ltd<br/>
+        Bengaluru, Karnataka<br/>
         India
       </p>
       <p>Copyright &copy; 2021</p>
