@@ -156,6 +156,7 @@ nav .nav-toggle {
 }
 
 .form {
+  max-width: 600px;
   /* width: 400px; */
   margin: 3rem auto;
 }
