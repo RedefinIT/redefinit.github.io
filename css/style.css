@@ -171,6 +171,9 @@ nav .nav-toggle {
 
 .form p {
   margin-top: 0;
+}
+
+.form p:last-of-type {
   margin-bottom: 2rem;
 }
 
@@ -287,6 +290,11 @@ select,
 
 .product .grid {
   padding-bottom: 10px;
+}
+
+.contact-text {
+  margin: 1em auto;
+  text-align: center;
 }
 
 /* BMA */
