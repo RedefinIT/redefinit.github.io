@@ -60,6 +60,11 @@
   transform: scale(0.98);
 }
 
+.mid {
+  display: grid;
+  place-items: center;
+}
+
 /* Headings and Subheadings */
 /* Page Header */
 
