@@ -23,7 +23,7 @@
             Redefin<span class="nav--highlight">IT</span>
           </h1></a
         >
-        <nav class="flex">
+        <!-- <nav class="flex">
           <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
           </button>
@@ -36,18 +36,24 @@
                 <li><a class="navlink" href="blog.html">Blog</a></li>
                 <li><a class="navlink" href="documentation.html">Docs</a></li>
               </ul>
-              <a href="trial-form.html" class="btn" target="_blank">Ask for a Trial</a>
+              <a href="trial-form.html" class="btn" target="_blank">TRY IT NOW</a>
             </div>
           </div>
-        </nav>
+        </nav> -->
       </div>
     </div>
+
+    
 
     <!-- Form -->
     
     <section class="form-page">
     <div class="form card">
       <h2>Contact Sales</h2>
+      
+        <p class="contact-text">You can write to us at <strong>contact@redefinit.com</strong></p> 
+        <p class="contact-text">OR</p>
+      
       <p>Get in touch with questions around your specific use cases, pricing for your company, upcoming product releases, RedefinIT BMA capabilities, technical product information, or anything that involves bare-metal server infrastructure.</p>
 
       <form action='https://forms.zohopublic.in/redefinit/form/ContactUs/formperma/1GQQSGqHf7Z3QMqSbFGxfqivy52ObG8gXLnXNwHC0eA/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
@@ -59,23 +65,22 @@
 
        
         <div class="form-control form-name">
-          <input type="text" maxlength="255" name="Name_First" placeholder="First Name" fieldType=7 />
-          <input type="text" maxlength="255" name="Name_Last" placeholder="Last Name" fieldType=7 />
+          <input type="text" maxlength="255" name="Name_First" placeholder="Name" fieldType=7 required />
         </div>
         <div class="form-control">
-          <input  type="text" name="SingleLine" placeholder="Company" value="" fieldType=1 maxlength="255" />
+          <input  type="text" name="SingleLine" placeholder="Company" value="" fieldType=1 maxlength="255" required />
         </div>
         <div class="form-control">
-          <input  type="text" name="SingleLine1" placeholder="Role" value="" fieldType=1 maxlength="255" />
+          <input  type="text" name="SingleLine1" placeholder="Role" value="" fieldType=1 maxlength="255" required />
         </div>
         <div class="form-control">
-          <input type="text" maxlength="255" name="Email" placeholder="Email" value="" fieldType=9 />
+          <input type="text" maxlength="255" name="Email" placeholder="Email" value="" fieldType=9 required />
         </div>
         <div class="form-control">
           <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" placeholder="Phone Number" phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11 id="international_PhoneNumber_countrycode" />
         </div>
         <div class="form-control">
-          <textarea name="MultiLine" rows="4" placeholder="Message" maxlength="65535"></textarea>
+          <textarea name="MultiLine" rows="4" placeholder="Message" maxlength="65535" required ></textarea>
         </div>
         <button class="btn btn-dark" type="submit">Submit</button>
         </div>
@@ -145,7 +150,7 @@
         <nav>
           <ul>
             <li><a href="#">Terms and Usage Policy</a></li>
-            <li><a href="#">Documentation </a></li>
+            <li><a href="documentation.html">Documentation </a></li>
           </ul>
         </nav>
         <div class="social">

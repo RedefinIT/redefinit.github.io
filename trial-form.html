@@ -23,7 +23,7 @@
             Redefin<span class="nav--highlight">IT</span>
           </h1></a
         >
-        <nav class="flex">
+        <!-- <nav class="flex">
           <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
           </button>
@@ -35,11 +35,12 @@
                 <li><a class="navlink" href="bma.html">Product</a></li>
                 <li><a class="navlink" href="blog.html">Blog</a></li>
                 <li><a class="navlink" href="documentation.html">Docs</a></li>
+				<li><a class="navlink" href="contact-form.html"><strong>Contact Us</strong></a></li>
               </ul>
-              <a href="trial-form.html" class="btn"  target="_blank">Ask for a Trial</a>
+              <a href="contact-form.html" class="btn"  target="_blank">Contact Us</a>
             </div>
           </div>
-        </nav>
+        </nav> -->
       </div>
     </div>
 
@@ -81,30 +82,19 @@
             <h2>Try RedefinIT BMA Software</h2>
             <p>Try it free for 90 days.</p>
         <div class="form-control form-name">
-          <label>
-            </label>
-            <input type="text" maxlength="255" name="Name_First" placeholder="First Name"  fieldType=7 required /><label></label>
-            <input type="text" maxlength="255" name="Name_Last" placeholder="Last Name" fieldType=7 required /><label></label>
+          
+            <input type="text" maxlength="255" name="Name_First" placeholder="Name"  fieldType=7 required />
         </div>
         
         <div class="form-control">
-          <input  type="text" name="SingleLine" value="" placeholder="Role" fieldType=1 maxlength="255" />
+          <input  type="text" name="SingleLine" value="" placeholder="Role" fieldType=1 maxlength="255" required />
         </div>
         <div class="form-control">
           <input  type="text" name="SingleLine1" value="" placeholder="Company" fieldType=1 maxlength="255" required />
         </div>
-        <div class="form-control">
-          <input type="text" maxlength="255" placeholder="Street Address" name="Address_AddressLine1"/>
-        </div>
-        <div class="form-control">
-          <input type="text" maxlength="255" placeholder="Address Line 2" name="Address_AddressLine2"/>
-        </div>
+        
         <div class="form-control form-name">
-          <input type="text" maxlength="255" placeholder="City" name="Address_City"/>
-          <input type="text" maxlength="255" placeholder="State/Region" name="Address_Region"/>
-        </div>
-        <div class="form-control">
-          <input type="text" maxlength="255" placeholder="Postal/ZIP Code" name="Address_ZipCode"/>
+          <input type="text" maxlength="255" placeholder="City" name="Address_City" required />
         </div>
         <div class="form-control">
           <select name="Address_Country"  required ><option>Country</option>
@@ -416,7 +406,7 @@
 		  <nav>
 			<ul>
 			  <li><a href="#">Terms and Usage Policy</a></li>
-			  <li><a href="#">Documentation </a></li>
+			  <li><a href="documentation.html">Documentation </a></li>
 			</ul>
 		  </nav>
 		  <div class="social">
