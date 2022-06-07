@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RedefinIT | BMA-PXE</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container-wide flex">
+        <a class="monogram" href="index.html"
+          ><h1 class="logo">
+            Redefin<span class="nav--highlight">IT</span>
+          </h1></a
+        >
+        <nav class="flex">
+          <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+          <div class="nav flex">
+            <div class="navsecondary flex">
+              <ul class="navlist flex">
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="about.html">About Us</a></li>
+                <li><a class="navlink" href="bma.html">Product</a></li>
+                <li><a class="navlink" href="blog.html">Blog</a></li>
+                <li><a class="navlink" href="documentation.html">Docs</a></li>
+                <li>
+                  <li><a class="navlink" href="contact-form.html" target="_blank">Contact Us</a></li>
+                </li>
+              </ul>
+              <!-- <a href="trial-form.html" class="btn" target="_blank"
+                >TRY IT NOW</a> -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Banner -->
+
+    <section>
+      <div class="header header-xsmall">
+        <img class="banner-img" src="images/bma-banner.png" alt="" />
+      </div>
+      <div class="banner-text">
+        <h2 class="m-1">
+          Simplify OS and Firmware deployment on Bare-Metal servers
+        </h2>
+        <div class="grid-3">
+          <a class="btn" href="trial-form.html" target="_blank">TRY IT NOW</a>
+          <a class="btn btn-light" href="blog.html">Read our Blog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+
+    <section class="section bg-dark">
+      <div class="container grid wide-gap">
+        <h2 class="o-1 text-primary">Why BMA?</h2>
+        <p class="o-2">
+          There is a major shift towards scale-out deployments in datacenters.
+          Scale-out is driven by a new era of software (On-Prem Cloud, HPC,
+          AI/ML, Containers, VMWare Virtualization, VDI, etc.). However,
+          organizations are facing significant friction with the onboarding,
+          provisioning and management of their physical hardware. Hardware is an
+          expensive and difficult resource to deploy within a data center,
+          driving organizations to move to the cloud.
+        </p>
+
+        <p class="o-4">
+          RedefinIT BMA addresses the key challenges in managing bare-metal
+          servers by providing a simplified approach to OS installation and
+          Firmware updates. It uses modern industry standard technologies and
+          protocols to automate OS installation and Firmware updates in a
+          secure, faster and reliable way. This product supports multiple vendor
+          hardware and multiple operating systems and hypervisors, making it a
+          versatile tool in the modern enterprise datacenter. It is highly
+          scalable to handle large-scale deployments. With RESTful API
+          interface, this tool can be easily integrated with O&M (orchestration
+          and management) tools such as Ansible, Terraform etc. for complete
+          end-to-end automation of Day-1 and Day-2 operations for bare-metal
+          server infrastructure.
+        </p>
+        <h2 class="o-3 text-secondary">A Simplified Approach</h2>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="text-primary">Key Benefits of BMA:</h2>
+        <p>
+          RedefinIT BMA reduces the complexity in bare-metal server deployment
+          by providing a simplified approach to automate the OS installation and
+          Firmware update process. BMA significantly reduces the cost as well as
+          the time consumption of both processes. Some of the notable advantages
+          are as follows:
+        </p>
+      </div>
+      <div class="container container-mobile grid wide-gap">
+        <div class="o-1">
+          <ul class="product-list">
+            <li>
+              BMA software is easy to setup and get started. Requires minimum
+              preparation effort for the deployment.
+            </li>
+            <li>
+              Uses secure protocols and technologies for network based OS
+              deployment on bare-metal servers. Uses OOB networking for network
+              booting and deployment.
+            </li>
+            <li>
+              Single interface for deploying both Firmware updates and OS.
+            </li>
+            <li>
+              Web client offers responsive and intuitive UI. Takes minimum
+              inputs from the user and converts to actual hardware-specific data
+              using hardware discovery.
+            </li>
+            <li>
+              Capable of handling large-scale deployment with ease. Reduces
+              deployment time by running tasks in parallel.
+            </li>
+          </ul>
+        </div>
+        <div class="product-illustration o-2">
+          <img src="/images/manwithserver.jpg" alt="" />
+        </div>
+        <div class="product-illustration o-4">
+          <img src="/images/logosforbma.jpg" alt="" />
+        </div>
+        <div class="o-3">
+          <ul class="product-list">
+            <li>
+              Single tool for deploying multiple operating systems and
+              hypervisors. Current version supports RHEL, VMWare ESXi. More
+              operating systems support in the roadmap.
+            </li>
+            <li>
+              Firmware deployment feature uses the hardware vendor provided
+              Firmware update bundles delivered as a single ISO image.
+            </li>
+            <li>
+              Supports server hardware from multiple vendors. Current version
+              supports HPE Gen10 and Dell Gen14 (or later) servers.
+            </li>
+            <li>
+              Supports hardware platform management tools HPE OneView and Dell
+              OpenManage for combining hardware provisioning and OS deployment.
+            </li>
+          </ul>
+        </div>
+        <div class="o-5">
+          <ul class="product-list">
+            <li>
+              Exposes REST API for supporting Infrastructure-as-Code and can be
+              integrated with DevOps processes.
+            </li>
+            <li>
+              Uses industry standard Kickstart configuration for implementing OS
+              customization.
+            </li>
+            <li>
+              Easily integrates with O&M (Orchestration and management) tools
+              such as Ansible, Terraform using the simple REST API servers.
+            </li>
+          </ul>
+        </div>
+        <div class="product-illustration o-6">
+          <img src="/images/devops.jpg" alt="" />
+          <!-- devops picture here  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features  -->
+
+    <section class="bg-dark section">
+      <div class="container">
+        <h2 class="text-secondary">Features</h2>
+        <p>
+          RedefinIT BMA uses modern industry standard technologies such as DMTF
+          Redfish, Virtual Media, UEFI, HTTPS/TLS for faster, reliable and
+          secure bare-metal server provisioning. This product not only supports
+          multi-vendor server hardware and operating systems but also
+          hypervisors, making it a versatile tool in the modern enterprise
+          datacenter. Some of the significant features are as follows:
+        </p>
+      </div>
+      <div class="container container-mobile grid wide-gap">
+        <div class="o-1">
+          <ul class="product-list">
+            <li>
+              Installs operating system using vendor provided or custom ISO
+              image and performs basic OS configuration for hostname, IP address
+              and network settings.
+            </li>
+            <li>
+              Deploys Firmware updates using vendor provided bootable ISO images
+              containing Firmware bundle.
+            </li>
+            <li>
+              Allows the user to choose desired OS drive and NIC using simple
+              sequence number based identifier. (refer to How it works for
+              details)
+            </li>
+            <li>
+              Uses the well known Kickstart configuration for OS customization.
+              The tool includes default Kickstart files. Custom Kickstarts can
+              be used for advanced OS customization.
+            </li>
+          </ul>
+        </div>
+        <div class="o-2">
+          <ul class="product-list">
+            <li>
+              The host IP address can be assigned in multiple ways.
+              <ul>
+                <li>
+                  Static - IP address is assigned using user specified value.
+                </li>
+                <li>
+                  Static-Range - IP address is assigned using a range of IP
+                  addresses.
+                </li>
+                <li>
+                  Address-Pool - IP address is assigned using the external
+                  address-pool provided by IP address management tools.
+                </li>
+                <li>
+                  DHCP - IP address is assigned using DHCP service in the
+                  network.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-illustration o-2">
+        <img src="/images/server.png" alt="" />
+      </div>
+      <div class="container container-mobile grid wide-gap">
+        <div class="o-1">
+          <ul class="product-list">
+            <li>
+              Supports operating systems including CentOS, RHEL and VMWare ESXi.
+              More operating systems support coming soon.
+            </li>
+            <li>
+              Supports multi-vendor hardware that is DMTF Redfish® compliant
+              (HPE, Dell to start).
+            </li>
+          </ul>
+        </div>
+        <div class="o-2">
+          <ul class="product-list">
+            <li>
+              Hardware discovery uses Redfish API to BMC instead of OS-based
+              hardware discovery to speed up the hardware discovery process.
+            </li>
+            <li>
+              Capable of bulk deployment of up to 50 servers in a batch. All
+              servers in a batch are deployed simultaneously.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container text-primary">
+      <h2>Demo Video</h2>
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/XUl97XzwA8g"
+              title="BMA Demo Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+      >
+      </iframe>
+    </section>
+    <section class="section container text-center">
+      <h2>Try BMA</h2>
+      <a class="btn" href="trial-form.html" target="_blank">TRY IT NOW</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-4">
+        <div>
+          <a class="monogram" href="index.html"
+            ><h1 class="logo">
+              Redefin<span class="nav--highlight">IT</span>
+            </h1></a
+          >
+          <p>
+            RedefinIT Technologies Pvt Ltd<br />
+            Bengaluru, Karnataka<br />
+            India
+          </p>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="bma.html">Product</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-form.html" target="_blank">Contact Us</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="#">Terms and Usage Policy</a></li>
+            <li><a href="documentation.html">Documentation </a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/redefinit" target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCzE3CYaQA4l9CZa3RyL4hyw/videos"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
