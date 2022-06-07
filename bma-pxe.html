@@ -32,7 +32,7 @@
               <ul class="navlist flex">
                 <li><a class="navlink" href="index.html">Home</a></li>
                 <li><a class="navlink" href="about.html">About Us</a></li>
-                <li><a class="navlink" href="bma.html">Product</a></li>
+                <li><a class="navlink" href="products.html">Products</a></li>
                 <li><a class="navlink" href="blog.html">Blog</a></li>
                 <li><a class="navlink" href="documentation.html">Docs</a></li>
                 <li>
@@ -55,7 +55,7 @@
       </div>
       <div class="banner-text">
         <h2 class="m-1">
-          Simplify OS and Firmware deployment on Bare-Metal servers
+          Simplify PXE based OS deployments
         </h2>
         <div class="grid-3">
           <a class="btn" href="trial-form.html" target="_blank">TRY IT NOW</a>
@@ -70,116 +70,13 @@
       <div class="container grid wide-gap">
         <h2 class="o-1 text-primary">Why BMA?</h2>
         <p class="o-2">
-          There is a major shift towards scale-out deployments in datacenters.
-          Scale-out is driven by a new era of software (On-Prem Cloud, HPC,
-          AI/ML, Containers, VMWare Virtualization, VDI, etc.). However,
-          organizations are facing significant friction with the onboarding,
-          provisioning and management of their physical hardware. Hardware is an
-          expensive and difficult resource to deploy within a data center,
-          driving organizations to move to the cloud.
+          Coming soon...
         </p>
 
         <p class="o-4">
-          RedefinIT BMA addresses the key challenges in managing bare-metal
-          servers by providing a simplified approach to OS installation and
-          Firmware updates. It uses modern industry standard technologies and
-          protocols to automate OS installation and Firmware updates in a
-          secure, faster and reliable way. This product supports multiple vendor
-          hardware and multiple operating systems and hypervisors, making it a
-          versatile tool in the modern enterprise datacenter. It is highly
-          scalable to handle large-scale deployments. With RESTful API
-          interface, this tool can be easily integrated with O&M (orchestration
-          and management) tools such as Ansible, Terraform etc. for complete
-          end-to-end automation of Day-1 and Day-2 operations for bare-metal
-          server infrastructure.
+
         </p>
         <h2 class="o-3 text-secondary">A Simplified Approach</h2>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2 class="text-primary">Key Benefits of BMA:</h2>
-        <p>
-          RedefinIT BMA reduces the complexity in bare-metal server deployment
-          by providing a simplified approach to automate the OS installation and
-          Firmware update process. BMA significantly reduces the cost as well as
-          the time consumption of both processes. Some of the notable advantages
-          are as follows:
-        </p>
-      </div>
-      <div class="container container-mobile grid wide-gap">
-        <div class="o-1">
-          <ul class="product-list">
-            <li>
-              BMA software is easy to setup and get started. Requires minimum
-              preparation effort for the deployment.
-            </li>
-            <li>
-              Uses secure protocols and technologies for network based OS
-              deployment on bare-metal servers. Uses OOB networking for network
-              booting and deployment.
-            </li>
-            <li>
-              Single interface for deploying both Firmware updates and OS.
-            </li>
-            <li>
-              Web client offers responsive and intuitive UI. Takes minimum
-              inputs from the user and converts to actual hardware-specific data
-              using hardware discovery.
-            </li>
-            <li>
-              Capable of handling large-scale deployment with ease. Reduces
-              deployment time by running tasks in parallel.
-            </li>
-          </ul>
-        </div>
-        <div class="product-illustration o-2">
-          <img src="/images/manwithserver.jpg" alt="" />
-        </div>
-        <div class="product-illustration o-4">
-          <img src="/images/logosforbma.jpg" alt="" />
-        </div>
-        <div class="o-3">
-          <ul class="product-list">
-            <li>
-              Single tool for deploying multiple operating systems and
-              hypervisors. Current version supports RHEL, VMWare ESXi. More
-              operating systems support in the roadmap.
-            </li>
-            <li>
-              Firmware deployment feature uses the hardware vendor provided
-              Firmware update bundles delivered as a single ISO image.
-            </li>
-            <li>
-              Supports server hardware from multiple vendors. Current version
-              supports HPE Gen10 and Dell Gen14 (or later) servers.
-            </li>
-            <li>
-              Supports hardware platform management tools HPE OneView and Dell
-              OpenManage for combining hardware provisioning and OS deployment.
-            </li>
-          </ul>
-        </div>
-        <div class="o-5">
-          <ul class="product-list">
-            <li>
-              Exposes REST API for supporting Infrastructure-as-Code and can be
-              integrated with DevOps processes.
-            </li>
-            <li>
-              Uses industry standard Kickstart configuration for implementing OS
-              customization.
-            </li>
-            <li>
-              Easily integrates with O&M (Orchestration and management) tools
-              such as Ansible, Terraform using the simple REST API servers.
-            </li>
-          </ul>
-        </div>
-        <div class="product-illustration o-6">
-          <img src="/images/devops.jpg" alt="" />
-          <!-- devops picture here  -->
-        </div>
       </div>
     </section>
 
@@ -189,12 +86,8 @@
       <div class="container">
         <h2 class="text-secondary">Features</h2>
         <p>
-          RedefinIT BMA uses modern industry standard technologies such as DMTF
-          Redfish, Virtual Media, UEFI, HTTPS/TLS for faster, reliable and
-          secure bare-metal server provisioning. This product not only supports
-          multi-vendor server hardware and operating systems but also
-          hypervisors, making it a versatile tool in the modern enterprise
-          datacenter. Some of the significant features are as follows:
+          RedefinIT BMA-PXE.
+          Some of the significant features are as follows:
         </p>
       </div>
       <div class="container container-mobile grid wide-gap">
@@ -206,18 +99,10 @@
               and network settings.
             </li>
             <li>
-              Deploys Firmware updates using vendor provided bootable ISO images
-              containing Firmware bundle.
             </li>
             <li>
-              Allows the user to choose desired OS drive and NIC using simple
-              sequence number based identifier. (refer to How it works for
-              details)
             </li>
             <li>
-              Uses the well known Kickstart configuration for OS customization.
-              The tool includes default Kickstart files. Custom Kickstarts can
-              be used for advanced OS customization.
             </li>
           </ul>
         </div>
@@ -247,30 +132,26 @@
         </div>
       </div>
       <div class="product-illustration o-2">
-        <img src="/images/server.png" alt="" />
+        <img src="/images/BMA-PXE_overview.png" alt="" />
       </div>
       <div class="container container-mobile grid wide-gap">
         <div class="o-1">
           <ul class="product-list">
             <li>
-              Supports operating systems including CentOS, RHEL and VMWare ESXi.
-              More operating systems support coming soon.
+              Supports operating systems CentOS, RHEL, Windows 10 and Clonezilla Live.
             </li>
             <li>
-              Supports multi-vendor hardware that is DMTF Redfish® compliant
-              (HPE, Dell to start).
+              With <a href="https://clonezilla.org">Clonezilla Live</a>, a system can be easily cloned and restored to multiple other systems.
             </li>
           </ul>
         </div>
         <div class="o-2">
           <ul class="product-list">
             <li>
-              Hardware discovery uses Redfish API to BMC instead of OS-based
-              hardware discovery to speed up the hardware discovery process.
+              Centralize the distribution of customized OS images using BMA-PXE Central and BMC-PXE Local.
             </li>
             <li>
-              Capable of bulk deployment of up to 50 servers in a batch. All
-              servers in a batch are deployed simultaneously.
+              The tool can be installed on a Linux VM running on a server or user's laptop
             </li>
           </ul>
         </div>
@@ -281,7 +162,7 @@
       <h2>Demo Video</h2>
       <iframe width="560" height="315"
               src="https://www.youtube.com/embed/XUl97XzwA8g"
-              title="BMA Demo Video" frameborder="0"
+              title="BMA-PXE Demo Video" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
       >
@@ -312,7 +193,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="bma.html">Product</a></li>
+            <li><a href="products.html">Products</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact-form.html" target="_blank">Contact Us</a></li>
           </ul>

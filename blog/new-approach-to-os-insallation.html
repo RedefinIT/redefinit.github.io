@@ -30,7 +30,7 @@
               <ul class="navlist flex">
                 <li><a class="navlink" href="../index.html">Home</a></li>
                 <li><a class="navlink" href="../about.html">About Us</a></li>
-                <li><a class="navlink" href="../bma.html">Product</a></li>
+                <li><a class="navlink" href="../products.html">Products</a></li>
                 <li><a class="navlink" href="../blog.html">Blog</a></li>
                 <li><a class="navlink" href="../documentation.html">Docs</a></li>
                 <li><a class="navlink" href="contact-form.html" target="_blank"><strong>Contact Us</strong></a></li>
@@ -69,16 +69,16 @@
         <p>However, DHCP poses security risks. The DHCP protocol requires no authentication, allowing any client to quickly join a network. Because of this limitation, it opens up many security risks, including DHCP clients receiving bad information from unauthorized DHCP servers and unauthorized/malicious DHCP clients receiving IP addresses. A rouge  DHCP server can give incorrect network information to cause denial-of-service attacks or man-in-the-middle attacks. There are some security measures available to mitigate these risks. However, eliminating DHCP itself is the best solution it is feasible. DHCP can be replaced with static IP assignment or IP pools that can provide the next available IP address for new hosts. But, PXE cannot support these alternatives.</p>
 
         <h3 class="sh-2">  BIOS (Basic Input Output System-based)</h3>
-        <p>BIOS originated in the early development of personal computers back in 1980s. The BIOS loads when the server starts up. It is responsible for waking up the hardware components, as well as testing and initializing them. The BIOS then looks for a Master Boot Record or MBR stored on the boot device for booting the operating system.</p>  
+        <p>BIOS originated in the early development of personal computers back in 1980s. The BIOS loads when the server starts up. It is responsible for waking up the hardware components, as well as testing and initializing them. The BIOS then looks for a Master Boot Record or MBR stored on the boot device for booting the operating system.</p>
 
-        <p>However, there are several limitations with legacy BIOS. It supports only 16-bit mode with 1MB memory address space, limiting its ability to handle multiple hardware devices at once. This limitation makes the boot process slower. Also, the maximum boot drive size is limited to only 2.1TB. 3 TB drives are now common, and hence a server with a BIOS can’t boot from them.</p> 
+        <p>However, there are several limitations with legacy BIOS. It supports only 16-bit mode with 1MB memory address space, limiting its ability to handle multiple hardware devices at once. This limitation makes the boot process slower. Also, the maximum boot drive size is limited to only 2.1TB. 3 TB drives are now common, and hence a server with a BIOS can’t boot from them.</p>
 
-        <p>  Almost all current generation industry standard servers come with support for UEFI (Unified Extensible Firmware Interface) which is the new standard for server boot technologies. UEFI has several advantages over legacy BIOS. UEFI technology was originally developed several years ago for the non-x86 HP-Intel Itanium server architecture. It is also the technology used on Macintosh computers. Eventually it was transferred to the Unified EFI Forum, which governs the specification today. Key benefits of UEFI are:</p> 
+        <p>  Almost all current generation industry standard servers come with support for UEFI (Unified Extensible Firmware Interface) which is the new standard for server boot technologies. UEFI has several advantages over legacy BIOS. UEFI technology was originally developed several years ago for the non-x86 HP-Intel Itanium server architecture. It is also the technology used on Macintosh computers. Eventually it was transferred to the Unified EFI Forum, which governs the specification today. Key benefits of UEFI are:</p>
           <ul class="bullet-list">
             <li>UEFI is faster to boot.</li>
             <li>It functions in both 32-bit and 64-bit modes with much greater memory address space.</li>
-            <li>With SecureBoot enabled it can authenticate firmware and OS  using encrypted digital certificate to prevent boot time malware attacks.</li>  
-            <li>UEFI uses GPT (GUID Partition Table) partition-table which  has the theoretically upper limit of 9.4 ZB (zettabytes) (ref.).</li> 
+            <li>With SecureBoot enabled it can authenticate firmware and OS  using encrypted digital certificate to prevent boot time malware attacks.</li>
+            <li>UEFI uses GPT (GUID Partition Table) partition-table which  has the theoretically upper limit of 9.4 ZB (zettabytes) (ref.).</li>
             <li>UEFI is  designed to be architecture-independent and supports any CPU architecture.</li>
             <li>UEFI is capable of network operations with built-in network stack. However, there is only support for HTTP but not for HTTPS.</li>
             <li>UEFI conforms to the Redfish API standard.</li>
@@ -88,10 +88,10 @@
       <h2 class="sh-1">Alternatives to PXE</h2>
       <h3 class="sh-2">iPXE</h3>
       <p>iPXE is a sophisticated boot program with advanced features such as HTTPS, Digest authentication, POST requests, scripts, menus, customizable code signing etc. iPXE also offers boot from a variety of sources such as HTTP, iSCSI SAN, FCoE, WAN etc. iPXE works as the initial bootloader with an iPXE configuration file that selects the next bootloader based on the MAC address or other criteria. Though there are different ways to let servers boot into iPXE, most implementations use the same old PXE/TFTP/DHCP to boot iPXE first, and then use it to chain load the actual OS installation media. iPXE feature is included in UEFI firmware for some servers and for such servers there is no need for an additional TFTP server. Setting up iPXE environment is not simple as it involves setting up DHCP and TFTP (in certain scenarios) first.</p>
-      
-      <h3 class="sh-2">UEFI-HTTP Boot </h3> 
+
+      <h3 class="sh-2">UEFI-HTTP Boot </h3>
       <p>UEFI-HTTP boot is a UEFI feature for net-booting which is similar to PXE and uses HTTP instead of TFTP.  UEFI HTTP Boot can be used to chainload iPXE from a HTTP server, eliminating the need for a separate TFTP server. This is helpful when iPXE support is not part of the server UEFI firmware. However, it relies on DHCP for IP configuration. Also, UEFI network stack only supports HTTP and not HTTPS. So, there is a dependency on HTTP net-booting which is not a problem in most datacenters. But in high security environments where HTTP is not allowed, this dependency can be a problem.</p>
-      
+
       <h3 class="sh-2">Virtual Media </h3>
       <p>Virtual Media is a feature of server BMC that allows attaching URL-based media as virtual CD/DVD-ROM or USB device. This feature can be used to boot server from the network using bootable image from HTTP or HTTPS file servers. Virtual Media is different from TFTP because the boot media is accessed through a more secure and reliable HTTP(s) protocol and is relatively easy to setup. The virtual media feature supports ISO images of up to 8 TB, and can perform better with higher network bandwidths. One key advantage that Virtual Media has over PXE/iPXE and UEFI-HTTP is that it doesn't need to utilize the server network ports to access the media over network. It uses out-of-band networking to access the boot and installation media, as it uses the server BMC network port. And since this port is commonly connected to an isolated management network, there is no interference to the production network by Virtual Media.</p>
       <p>Virtual Media can be a good alternative to PXE. It just needs bootable OS installation media with embedded kickstart to automate OS installation and configuration. The kickstart file can be coded to use DHCP or Static IP for configuring the host networking.</p>
@@ -122,18 +122,18 @@
       <h3 class="sh-2">References:</h3>
       <ul class="blog-links">
       <li><a class="blog-link" href="https://software.intel.com/content/www/us/en/develop/blogs/network-boot-in-a-zero-trust-environment.html">Network boot in a zero trust environment. By James Brian Richardson.</a></li>
-  
+
       <li><a class="blog-link" href="https://us-cert.cisa.gov/ncas/alerts/TA13-207A">Risks of Using the Intelligent Platform Management Interface (IPMI)</a></li>
 
       <li><a class="blog-link" href="http://fish2.com/ipmi/river.pdf">Sold Down the River (a paper on IPMI security vulnerabilities) by Dan Farmer</a></li>
-      
+
       <li><a class="blog-link" href="https://www.computerworld.com/article/2708437/ipmi--the-most-dangerous-protocol-you-ve-never-heard-of.html">IPMI: The most dangerous protocol you've never heard of. By Paul F. Roberts</a></li>
-      
+
       <li><a class="blog-link" href="https://www.networkworld.com/article/3299438/dhcp-defined-and-how-it-works.html">DHCP defined and how it works. By Zeus Kerravala</a></li>
     </ul>
-      
+
     </section>
-    
+
     <!-- Footer -->
     <footer class="footer bg-dark py-5">
       <div class="container grid grid-4">
@@ -153,7 +153,7 @@
           <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../about.html">About Us</a></li>
-            <li><a href="../bma.html">Product</a></li>
+            <li><a href="../products.html">Products</a></li>
             <li><a href="../blog.html">Blog</a></li>
             <li><a href="../contact-form.html" target="_blank">Contact Us</a></li>
           </ul>
