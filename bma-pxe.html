@@ -51,7 +51,7 @@
 
     <section>
       <div class="header header-xsmall">
-        <img class="banner-img" src="images/bma-banner.png" alt="" />
+        <img class="banner-img" src="images/BMA-PXE-banner.png" alt="" />
       </div>
       <div class="banner-text">
         <h2 class="m-1">
@@ -59,7 +59,7 @@
         </h2>
         <div class="grid-3">
           <a class="btn" href="trial-form.html" target="_blank">TRY IT NOW</a>
-          <a class="btn btn-light" href="blog.html">Read our Blog</a>
+          <a class="btn btn-light" href="blog/OS-deployment-over-network-for-POS-and-BOS-devices.html">Read our Blog</a>
         </div>
       </div>
     </section>
@@ -68,13 +68,19 @@
 
     <section class="section bg-dark">
       <div class="container grid wide-gap">
-        <h2 class="o-1 text-primary">Why BMA?</h2>
+        <h2 class="o-1 text-primary">Why BMA-PXE?</h2>
         <p class="o-2">
-          Coming soon...
+          OS is installed on computer systems using CD/DVD, USB mas storage drive or PXE netboot.
+          Almost all IT environments restrict using USB mass storage devices. In such environments USB drive option is out.
+          Most popular alternative is PXE netboot. There are number of tools that provide OS installation over the network using PXE.
+          However setting up PXE is not easy. It requires several manual steps to successfully bring up PXE services to work.
+          IT administrators also use disk cloning and restoring for creating customized OS images and distributing as
+          clones which can be directly restored to multiple similar devices.
         </p>
 
         <p class="o-4">
-
+          BMA-PXE hides the configuration of PXE services from the user and provides intuitive Web-UI which asks
+          for very minimal inputs to prepare and start the PXE services to enable PXE enabled clients in the network to boot.
         </p>
         <h2 class="o-3 text-secondary">A Simplified Approach</h2>
       </div>
@@ -84,9 +90,18 @@
       <div class="container">
         <h2 class="text-primary">Key Benefits of BMA:</h2>
         <p>
-          RedefinIT BMA reduces the complexity in bare-metal server deployment
-          by providing a simplified approach to automate the OS installation and
-          Firmware update process. BMA significantly reduces the cost as well as
+          RedefinIT BMA-PXE is simplified PXE server for deploying OS over the network on PXE enabled computer systems.
+          It
+
+          simplifies PXE network boot based OS deployments on PXE enabled computer systems
+          in the network by providing an intuitive Web-UI for specifying the deploymenent requirements and
+          by automating the configuration of PXE services (DHCP and TFTP) and OS installation media sharing
+          the PXE network boot based OS deployment by .
+          It hides the complexity involved in setting up PXE network boot configuring the services required for supporting PXE network boot by automating.
+          It reduces the complexity in setting up PXE network boot by automatically configuring the required services (DHCP and TFTP)
+          to provide network based OS deployment to PXE enabled clients.
+
+          BMA significantly reduces the cost as well as
           the time consumption of both processes. Some of the notable advantages
           are as follows:
         </p>
@@ -118,10 +133,10 @@
           </ul>
         </div>
         <div class="product-illustration o-2">
-          <img src="/images/PXE-booting.png" alt="" />
+          <img src="/images/PXE-booting.png" alt="" style="width: 300px" />
         </div>
         <div class="product-illustration o-2">
-          <img src="/images/BMA-PXE-disrtributed.png" alt="" />
+          <img src="/images/BMA-PXE-disrtributed.png" alt="" style="width: 300px" />
         </div>
         <div class="o-3">
           <ul class="product-list">
